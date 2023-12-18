@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="login.css">
+  <link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+/>
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+/>
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0"
+/>
+
+
+
+  <title>Document</title>
+</head>
+<body>
+
+  <div class="heading1">
+    <div>
+      Home > Account
+    </div>
+    <h2>
+      Login
+    </h2>
+  </div>
+
+  <div class="login">
+    <div class="container">
+      <label for="">Email</label>
+      <input id="email" type="email">
+      <label for="">Password</label>
+      <input id="password" type="password">
+      <button onclick="loginButton()">Sign In</button>
+      <hr><span class="or-text">or</span><hr>
+      <button id="create-account" onclick="registrationToggle()">Create Account</button>
+    </div>
+  </div>
+  
+  <div id="registration"> 
+    <div class="container2">
+      <span id="close" onclick="registrationToggle()">&times;</span>
+      <h2>Create Account</h2>
+      <label for="">First Name</label>
+      <input type="text">
+      <label for="">Last Name</label>
+      <input type="text">
+      <label for="">Email</label>
+      <input id="email-input" type="email">
+      <label for="">Password</label>
+      <input id="password-input" type="password">
+      <button id="create-button" onclick="getUserRegister()">Create</button>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="col-lg-8">
+        <p>Copyright © Trip to Boracay, All rights reserved.
+      </div>
+    </div>
+  </footer>
+  <script src="login.js"></script>
+</body>
+</html>
